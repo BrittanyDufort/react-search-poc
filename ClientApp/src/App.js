@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Layout } from './components/Layout';
 import { SearchPage } from './components/Search';
 
 export default class App extends Component {
@@ -6,7 +7,9 @@ export default class App extends Component {
 
     render() {
         return (
-            <SearchPage />
+            <Layout>
+                <SearchPage />
+            </Layout>
         );
     }
 }
